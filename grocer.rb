@@ -38,7 +38,7 @@ save = []
            if !cart["#{coupon[:item]} W/COUPON"]
              
                cart["#{coupon[:item]} W/COUPON"]={
-                 :price => coupon[:cost],
+                 :price => coupon[:cost] / coupon[:num],
                  :clearance => cart[coupon[:item]][:clearance],
                  :count => coupon[:num]
         

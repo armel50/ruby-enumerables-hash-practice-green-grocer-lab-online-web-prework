@@ -19,14 +19,14 @@ end
 def apply_coupons(cart, coupons)
 
 count = 0
-save = []
-  while  count < coupons.length do 
+# save = []
+#   while  count < coupons.length do 
     
-    save.push(coupons[count][:cost] / coupons[count][:num]) 
-    count += 1
+#     save.push(coupons[count][:cost] / coupons[count][:num]) 
+#     count += 1
     
-  end
-   save.each_with_index {|el, index| coupons[index][:cost] = el  }
+#   end
+#   save.each_with_index {|el, index| coupons[index][:cost] = el  }
     
   coupons.each do |coupon|
   
